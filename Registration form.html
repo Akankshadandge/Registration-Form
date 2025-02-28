@@ -1,0 +1,134 @@
+<!-- student registration form designing -->
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <title>Registration form</title>
+    <link rel="icon" href="man.png">
+	<style>
+	  div{
+	    width:250px;
+		border-radius:20px;
+		box-shadow:0 0 25px black;
+		margin:auto;
+		padding:60px;
+	  }
+	</style>
+  </head>
+  <body>
+	<div>
+	  <h2 align="center"><u> Bank Account Registration Form</u></h2>
+	  <h6>----------------------------------------------------------------------</h6>
+	  <h4>Account Information</h4>
+	  <h6>----------------------------------------------------------------------</h6>
+	  <form id="frm" action="registration.html">
+	  <p> 
+		  <label for="Account">Account Type</label> 
+		  <select id="Account" name="Account">
+		    <option value="">Please Select</option>
+		    <option value="CA">Checking Account</option>
+			<option value="SA">Savings Account</option>
+			<option value="MM">A Money Market Account</option>
+			<option value="CD">Certificates of Deposite(CD)</option>
+			<option value="IRA">IRA Account</option>
+			</select> 
+			  </p>&nbsp;
+		
+		  <label for="Account">Currency Type</label> <bR>
+		  <select id="Account" name="Account">
+		    <option value="">Please Select</option>
+		    <option value="US">USD-US Dollar</option>
+			<option value="EUR">EUR-Euro</option>
+			<option value="GBP">GBP-Pound Sterling</option>
+			<option value="CAD">CAD-Canadian Dollar</option>
+			<option value="IRA">Kuwaiti Dinar</option>
+			  </select>
+		</p>
+		<h6>----------------------------------------------------------------------</h6>
+		<h4>Personal Information</h4>
+		<p><em>The information given in this section is considered as the information of the
+		 primary account owner information.</em></p>
+		<p>
+		  <h4>Name</h4>
+		  <label for="pf">Prefix</label> <span>*</span> <br>
+		  <input type="text" id="pf" name="pf" autofocus required><br>
+		  
+		  <label for="fn">First Name</label> <span>*</span>
+		  <input type="text" id="fn" name="fn" autofocus required><br>
+		  
+		  <label for="Ln">Last Name</label> <span>*</span> 
+		  <input type="text" id="Ln" name="Ln" autofocus required><br>
+		  
+		</p>
+		<p>
+		  <label for="em">EmailId</label> <span>*</span> <br>
+		  <input type="email" id="em" name="em" required>
+		</p>
+		<p>
+		  <label for="phone">Contact number</label> <span>*</span> <Br>
+		  <input type="text" id="phone" name="phone" required maxlength="10">
+	    </p>
+		<p> 
+		  <label for="dob">Date of Birth</label><br>
+		  <input type="date" id="dob" name="dob" min="1990-01-01" max="2024-06-13">
+		</p>
+		<label for="Ra">Residental Address</label> <span>*</span> <br>
+		  <input type="text" id="Ra" name="Ra" autofocus required><br>
+		  
+		 <label for="Sa">Street Address</label> <span>*</span> <br>
+		  <input type="text" id="sa" name="sa" autofocus required><br>
+		  
+		  <label for="c">city</label> <span>*</span> <br>
+		  <input type="text" id="c" name="c" autofocus required><br>
+		  
+		  <label for="st">State/Province</label> <span>*</span> <br>
+		  <input type="text" id="st" name="st" autofocus required><br>
+		
+		<p>
+		  
+		  <label>Citizenship</label><br>
+		  <input type="radio" id="U1" name="Us" value="U" checked>
+		  <label>Us Citizen</label><br>
+		  <input type="radio" id="E2" name="Eu" value="E">
+		  <label>Eu Citizen</label> <br>
+		  <input type="radio" id="O3" name="O" value="o">
+		  <label>Other</label>
+		</p>
+		<p>
+		  <label for="country">Country</label> <bR>
+		  <select id="Country" name="Country">
+		    <option value="In">India</option>
+		    <option value="Us">USA</option>
+			<option value="Ja">Japan</option>
+			<option value="Aus">Australia</option>
+			<option value="Fra">France</option>
+			<option value="Ca">Canada</option>
+		  </select>
+		</p>
+		<p>
+		  <label for="Op">Occupation</label> <span>*</span> <br>
+		  <input type="text" id="op" name="op" autofocus required>
+		</p>
+		<p>
+		  <label for="Emp">Employer Name</label> <span>*</span> <br>
+		  <input type="text" id="Emp" name="emp" autofocus required>
+		</p>
+		<h6>----------------------------------------------------------------------</h6>
+		<h4>Do you want to add joint owner to the bank account?</h4>
+		<p>
+		<input type="radio" id="y1" name="Yes" value="y" >
+		  <label>Yes</label><br>
+		  <input type="radio" id="n1" name="No" value="N" >
+		  <label>No</label><br>
+		  </p>
+		<h6>----------------------------------------------------------------------</h6>
+		<p>
+		  <input type="checkbox" id="tc" required>
+		  <label>I Accepted Terms & Conditions</label>
+		</p>
+		<p align="center">
+		  <button type="submit">Register Now</button>
+		</p>
+ 	  </form> 	  
+	</div>
+  </body>
+</html>
